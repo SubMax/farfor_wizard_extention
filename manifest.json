@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "Hello",
-	"description": "Тестовое расширение. Го погнали!",
+	"name": "ERP helper",
+	"description": "Расширение для помощи в ERP - farfor.",
 	"version": "1.0.0",
   "icons": {"192": "logo-loader.png"},
   "content_scripts": [

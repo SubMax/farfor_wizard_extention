@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Hello",
+	"description": "Тестовое расширение. Го погнали!",
+	"version": "1.0.0",
+  "icons": {"192": "logo-loader.png"},
+  "content_scripts": [
+      {
+        "matches": [
+          "https://123.frfrstaging.pw/*"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": "logo-loader.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"]
+}

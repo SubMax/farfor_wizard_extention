@@ -1,13 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Wizard ERP</title>
+
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
         <link href="https://123.frfrstaging.pw/static/erp/resources/Farfor-all.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-red.min.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
         <link href="./main.css" rel="stylesheet"type="text/css">
     </head>
-    <body>
-        <dev><span class="material-icons">help</span> - помощь</dev>  
+    <body>    
+        <div class="main-card-wide mdl-card mdl-shadow--2dp" id="main_card">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Welcome</h2>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="get_started">
+                Get Started
+                </a>
+            </div>
+            <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">share</i>
+                </button>
+            </div>
+        </div>
+
+        <div class="list-card-wide mdl-card mdl-shadow--2dp" id="list_card" hidden = 0>
+            <div class="mdl-card__title">
+                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="table-layout:fixed; width:100%;">
+                    <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Тема</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric" id="orders">Заказы</td>
+                            <td><span class="mdl-badge" data-badge="2">3</span></td>
+                        </tr>
+                        <tr class="list_orders" id="new_order" hidden = 0 style="background-color:darkgray;">
+                            <td class="mdl-data-table__cell--non-numeric">&nbsp;&nbsp;&nbsp;Создание заказа</td>
+                            <td></td>
+                        </tr>
+                        <tr class="list_orders" hidden = 0 style="background-color:darkgray;">
+                            <td class="mdl-data-table__cell--non-numeric">&nbsp;&nbsp;&nbsp;Как оформить заказ</td>
+                            <td><span class="material-icons mdl-badge">fiber_new</span></td>
+                        </tr>
+                        <tr class="list_orders" hidden = 0 style="background-color:darkgray;">
+                            <td class="mdl-data-table__cell--non-numeric">&nbsp;&nbsp;&nbsp;Карточка заказа</td>
+                            <td><span class="material-icons mdl-badge">fiber_new</span></td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Задачи и уведомления</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">Клиенты</td>
+                            <td>7</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="arrow_back">
+                <i class="material-icons">arrow_back</i>
+                </button>
+            </div>
+        </div>
+
+        <div class="new-card-wide mdl-card mdl-shadow--2dp" id="new_order_card" hidden = 0>
+            <div class="mdl-card__title">
+                <ul class="mdl-list">
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <span>Bryan Cranston</span>
+                        <span class="mdl-list__item-text-body">
+                          Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+                          for playing Hal in Malcom in the Middle.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+            </div>
+            <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="home_back">
+                <i class="material-icons">home</i>
+                </button>
+            </div>
+        </div>
+
+        <script src="popup.js"></script>  
     </body>
 </html>

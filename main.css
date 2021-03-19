@@ -3,5 +3,28 @@ html,body {
     margin: 0;
     min-height: 180px;
     padding: 0;
-    width: 380px;
 }
+
+.main-card-wide.mdl-card {
+    width: 512px;
+    }
+.main-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('farfor-og-image.png') center / cover;
+    }
+
+.list-card-wide.mdl-card, .new-card-wide.mdl-card {
+    width: 512px;
+    overflow: auto;
+    }
+
+.list-card-wide > .mdl-card__title {
+    height: 230px;
+    background: url('pattern.png') center / cover;
+    }
+    
+.new-card-wide > .mdl-card__title {
+    height: 230px;
+    background: url('pattern.png') center / cover;
+    }

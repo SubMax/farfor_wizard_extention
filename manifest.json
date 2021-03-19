@@ -15,7 +15,8 @@
     ],
   "browser_action": {
     "default_icon": "logo-loader.png",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "ERP helper"
   },
   "permissions": [
     "activeTab", 

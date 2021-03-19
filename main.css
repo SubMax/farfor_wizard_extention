@@ -3,5 +3,16 @@ html,body {
     margin: 0;
     min-height: 180px;
     padding: 0;
-    width: 380px;
 }
+
+.main-card-wide.mdl-card {
+    width: 512px;
+    }
+.main-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('farfor-og-image.png') center / cover;
+    }
+.main-card-wide > .mdl-card__menu {
+    color: #fff;
+    }

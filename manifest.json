@@ -7,7 +7,8 @@
   "content_scripts": [
       {
         "matches": [
-          "https://123.frfrstaging.pw/*"
+          "https://123.frfrstaging.pw/*",
+          "http://123.farfor.local:8000/*"
         ],
         "js": ["content.js"]
       }
@@ -16,7 +17,10 @@
     "default_icon": "logo-loader.png",
     "default_popup": "popup.html"
   },
-  "permissions": ["activeTab"],
+  "permissions": [
+    "activeTab", 
+    "storage"
+  ],
   "background": {
     "service_worker": "background.js"
   }

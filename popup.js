@@ -1,3 +1,4 @@
+// Получение какрточек
 newOrderCard = document.getElementById('new_order_card')
 mainCard = document.getElementById('main_card');
 listCard = document.getElementById('list_card');

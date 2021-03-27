@@ -3,7 +3,7 @@
 	"name": "ERP helper",
 	"description": "Расширение для помощи в ERP - farfor.",
 	"version": "1.0.0",
-  "icons": {"32": "logo-loader.png"},
+  "icons": {"32": "image/logo-loader.png"},
   "content_scripts": [
       {
         "matches": [
@@ -14,7 +14,7 @@
       }
     ],
   "action": {
-    "default_icon": "logo-loader.png",
+    "default_icon": "image/logo-loader.png",
     "default_popup": "popup.html",
     "default_title": "ERP helper"
   },

@@ -1,14 +1,14 @@
-console.log("qwe");
+console.log("start");
 
-link = document.createElement('link');
-link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
-link.rel = 'stylesheet';
-document.head.appendChild(link);
 
-icon = document.createElement('div');
-icon.innerHTML = '<span class="material-icons">help</span>';
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector("#edit-order")
 
-tabs = document.querySelectorAll('.x-tab-inner');
-tabs.forEach(tab => {
-    tab.appendChild(icon);
-});
+    button.addEventListener("click", () => {
+        console.log('click')
+        chrome.runtime.sendMessage('lesson started');
+    });
+})
+
+
+

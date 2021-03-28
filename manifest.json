@@ -1,25 +1,34 @@
 {
-	"manifest_version": 3,
-	"name": "ERP helper",
-	"description": "Расширение для помощи в ERP - farfor.",
-	"version": "1.0.0",
-  "icons": {"32": "image/logo-loader.png"},
+  "manifest_version": 3,
+  "name": "ERP helper",
+  "description": "Расширение для помощи в ERP - farfor.",
+  "version": "1.0.0",
+  "icons": {
+    "32": "image/logo-loader.png"
+  },
   "content_scripts": [
-      {
-        "matches": [
-          "https://123.frfrstaging.pw/*",
-          "http://123.farfor.local:8000/*"
-        ],
-        "js": ["content.js", "popup.js"]
-      }
-    ],
+    {
+      "matches": [
+        "https://123.frfrstaging.pw/*",
+        "http://123.farfor.local:8000/*"
+      ],
+      "js": [
+        "/js/content.js",
+        "/js/popup.js"
+      ]
+    }
+  ],
   "action": {
     "default_icon": "image/logo-loader.png",
     "default_popup": "popup.html",
     "default_title": "ERP helper"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "/js/background.js"
   }
 }

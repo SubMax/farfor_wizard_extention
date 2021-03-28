@@ -11,7 +11,7 @@ html,body {
 .main-card-wide > .mdl-card__title {
     color: #fff;
     height: 176px;
-    background: url('image/farfor-og-image.png') center / cover;
+    background: url('../image/farfor-og-image.png') center / cover;
     }
 
 .list-card-wide.mdl-card, .new-card-wide.mdl-card {
@@ -21,10 +21,10 @@ html,body {
 
 .list-card-wide > .mdl-card__title {
     height: 230px;
-    background: url('image/pattern.png') center / cover;
+    background: url('../image/pattern.png') center / cover;
     }
     
 .new-card-wide > .mdl-card__title {
     height: 230px;
-    background: url('image/pattern.png') center / cover;
+    background: url('../image/pattern.png') center / cover;
     }
